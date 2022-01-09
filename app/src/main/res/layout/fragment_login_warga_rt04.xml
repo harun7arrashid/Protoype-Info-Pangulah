@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/gradient_login"
+    tools:context=".view.rt.rt04.login.LoginWargaRt04Fragment">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_login_warga_rt04"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimary"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark"
+        app:layout_collapseMode="pin"
+        app:title="Login Warga RT04"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_login_sign"
+        style="@style/TvLoginDisini"
+        app:layout_constraintBottom_toTopOf="@id/textField_email_rt04"
+        app:layout_constraintEnd_toEndOf="@id/textField_email_rt04"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintStart_toStartOf="@id/textField_email_rt04" />
+
+    <TextView
+        android:id="@+id/tv_login_welcome_rt04"
+        style="@style/TvLoginWelcome"
+        android:text="@string/welcome_citizen_rt04"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/tv_login_sign"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/toolbar_login_warga_rt04"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textField_email_rt04"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.TextFieldLoginRt"
+        app:boxBackgroundMode="outline"
+        app:errorEnabled="true"
+        app:errorTextColor="@color/colorRed"
+        app:layout_constraintBottom_toTopOf="@id/textField_password_rt04"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edt_email_warga_rt04"
+            style="@style/EdtEmail"
+            android:importantForAutofill="no" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textField_password_rt04"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.TextFieldLoginRt"
+        app:boxBackgroundMode="outline"
+        app:counterEnabled="true"
+        app:counterTextColor="@android:color/white"
+        app:errorEnabled="true"
+        app:errorTextColor="@color/colorRed"
+        app:layout_constraintBottom_toTopOf="@id/btn_login_warga_rt04"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1"
+        app:passwordToggleEnabled="true"
+        app:passwordToggleTint="@android:color/darker_gray">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edt_password_warga_rt04"
+            style="@style/EdtPassword"
+            android:imeOptions="actionDone"
+            android:importantForAutofill="no" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/btn_login_warga_rt04"
+        style="@style/BtnLoginRt"
+        android:text="@string/login"
+        app:layout_constraintBottom_toTopOf="@id/tv_warga"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_warga"
+        style="@style/TvNotHaveAccount"
+        app:layout_constraintBottom_toTopOf="@id/tv_register_warga_rt04"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintStart_toStartOf="@id/btn_login_warga_rt04" />
+
+    <TextView
+        android:id="@+id/tv_register_warga_rt04"
+        android:text="Admin RT04"
+        style="@style/TvRegisterCitizen"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@id/img_wa_rt04" />
+
+    <ImageView
+        android:id="@+id/img_wa_rt04"
+        style="@style/ImgWa"
+        app:layout_constraintBottom_toBottomOf="@id/tv_register_warga_rt04"
+        app:layout_constraintStart_toStartOf="@id/tv_warga"
+        app:layout_constraintTop_toTopOf="@id/tv_register_warga_rt04" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

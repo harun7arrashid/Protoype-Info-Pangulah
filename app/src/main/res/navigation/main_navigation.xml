@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_navigation"
+    app:startDestination="@id/listInfoFragment">
+
+    <fragment
+        android:id="@+id/listInfoFragment"
+        android:name="com.pangper.infopangulahpermai.view.mainMenu.ListInfoFragment"
+        android:label="fragment_list_info"
+        tools:layout="@layout/fragment_list_info" >
+
+        <action
+            android:id="@+id/action_listInfoFragment_to_listRtFragment"
+            app:destination="@id/listRtFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+
+        <action
+            android:id="@+id/action_listInfoFragment_to_culinaryActivity"
+            app:destination="@id/culinaryActivity"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+
+        <action
+            android:id="@+id/action_listInfoFragment_to_rentalActivity"
+            app:destination="@id/rentalActivity"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+
+        <action
+            android:id="@+id/action_listInfoFragment_to_serviceActivity"
+            app:destination="@id/serviceActivity"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+
+        <action
+            android:id="@+id/action_listInfoFragment_to_shopActivity"
+            app:destination="@id/shopActivity"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/listRtFragment"
+        android:name="com.pangper.infopangulahpermai.view.mainMenu.ListRtFragment"
+        android:label="fragment_list_rt"
+        tools:layout="@layout/fragment_list_rt" >
+
+        <action
+            android:id="@+id/action_listRtFragment_to_listInfoDkmFragment"
+            app:destination="@id/listInfoDkmFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim"/>
+
+        <action
+            android:id="@+id/action_listRtFragment_to_loginRt03Activity"
+            app:destination="@id/loginRt03Activity"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim"/>
+
+        <action
+            android:id="@+id/action_listRtFragment_to_loginRt01Activity"
+            app:destination="@id/loginRt01Activity"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim"/>
+
+        <action
+            android:id="@+id/action_listRtFragment_to_loginRt02Activity"
+            app:destination="@id/loginRt02Activity"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim"/>
+
+        <action
+            android:id="@+id/action_listRtFragment_to_loginRt04Activity"
+            app:destination="@id/loginRt04Activity"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+    </fragment>
+
+    <activity
+        android:id="@+id/culinaryActivity"
+        android:name="com.pangper.infopangulahpermai.view.culinary.CulinaryActivity"
+        android:label="activity_culinary"
+        tools:layout="@layout/activity_culinary" />
+
+    <activity
+        android:id="@+id/rentalActivity"
+        android:name="com.pangper.infopangulahpermai.view.rental.RentalActivity"
+        android:label="activity_rental"
+        tools:layout="@layout/activity_rental" />
+
+    <activity
+        android:id="@+id/serviceActivity"
+        android:name="com.pangper.infopangulahpermai.view.service.ServiceActivity"
+        android:label="activity_service"
+        tools:layout="@layout/activity_service" />
+
+    <activity
+        android:id="@+id/shopActivity"
+        android:name="com.pangper.infopangulahpermai.view.shop.ShopActivity"
+        android:label="activity_shop"
+        tools:layout="@layout/activity_shop" />
+
+    <fragment
+        android:id="@+id/listInfoDkmFragment"
+        android:name="com.pangper.infopangulahpermai.view.dkm.ListInfoDkmFragment"
+        android:label="fragment_list_info_dkm"
+        tools:layout="@layout/fragment_list_info_dkm" >
+
+        <action
+            android:id="@+id/action_listInfoDkmFragment_to_charityBoxActivity"
+            app:destination="@id/charityBoxActivity"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim"/>
+
+        <action
+            android:id="@+id/action_listInfoDkmFragment_to_loginAdminDkmFragment"
+            app:destination="@id/loginAdminDkmFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+
+        <action
+            android:id="@+id/action_listInfoDkmFragment_to_infaqActivity"
+            app:destination="@id/infaqActivity"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+
+        <action
+            android:id="@+id/action_listInfoDkmFragment_to_buildingActivity"
+            app:destination="@id/buildingActivity"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+
+        <action
+            android:id="@+id/action_listInfoDkmFragment_to_qurbanActivity"
+            app:destination="@id/qurbanActivity"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+
+        <action
+            android:id="@+id/action_listInfoDkmFragment_to_electricActivity"
+            app:destination="@id/electricActivity"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+    </fragment>
+
+    <activity
+        android:id="@+id/loginRt03Activity"
+        android:name="com.pangper.infopangulahpermai.view.rt.rt03.login.LoginRt03Activity"
+        android:label="activity_login_rt03"
+        tools:layout="@layout/activity_login_rt03" />
+
+    <activity
+        android:id="@+id/loginRt01Activity"
+        android:name="com.pangper.infopangulahpermai.view.rt.rt01.login.LoginRt01Activity"
+        android:label="activity_login_rt01"
+        tools:layout="@layout/activity_login_rt01" />
+
+    <activity
+        android:id="@+id/loginRt02Activity"
+        android:name="com.pangper.infopangulahpermai.view.rt.rt02.login.LoginRt02Activity"
+        android:label="activity_login_rt02"
+        tools:layout="@layout/activity_login_rt02" />
+
+    <activity
+        android:id="@+id/loginRt04Activity"
+        android:name="com.pangper.infopangulahpermai.view.rt.rt04.login.LoginRt04Activity"
+        android:label="activity_login_rt04"
+        tools:layout="@layout/activity_login_rt04" />
+
+    <activity
+        android:id="@+id/charityBoxActivity"
+        android:name="com.pangper.infopangulahpermai.view.dkm.charityBox.CharityBoxActivity"
+        android:label="activity_charity_box"
+        tools:layout="@layout/activity_charity_box" />
+    <fragment
+        android:id="@+id/loginAdminDkmFragment"
+        android:name="com.pangper.infopangulahpermai.view.dkm.LoginAdminDkmFragment"
+        android:label="fragment_login_admin_dkm"
+        tools:layout="@layout/fragment_login_admin_dkm" >
+
+        <action
+            android:id="@+id/action_loginAdminDkmFragment_to_listInfoDkmFragment"
+            app:destination="@id/listInfoDkmFragment"
+            app:launchSingleTop="true"
+            app:popUpTo="@id/listInfoDkmFragment"
+            app:popUpToInclusive="true"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+    </fragment>
+    <activity
+        android:id="@+id/infaqActivity"
+        android:name="com.pangper.infopangulahpermai.view.dkm.infaq.InfaqActivity"
+        android:label="activity_infaq"
+        tools:layout="@layout/activity_infaq" />
+    <activity
+        android:id="@+id/buildingActivity"
+        android:name="com.pangper.infopangulahpermai.view.dkm.donationBuilding.BuildingActivity"
+        android:label="activity_building"
+        tools:layout="@layout/activity_building" />
+    <activity
+        android:id="@+id/qurbanActivity"
+        android:name="com.pangper.infopangulahpermai.view.dkm.qurban.QurbanActivity"
+        android:label="activity_qurban"
+        tools:layout="@layout/activity_qurban" />
+    <activity
+        android:id="@+id/electricActivity"
+        android:name="com.pangper.infopangulahpermai.view.dkm.electricityDonation.ElectricActivity"
+        android:label="activity_electric"
+        tools:layout="@layout/activity_electric" />
+</navigation>

@@ -1,0 +1,437 @@
+<resources>
+    <string name="app_name">Info Pangulah Permai</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="moneyInfo">Info Keuangan</string>
+    <string name="info_rw_09">Info RW 09</string>
+    <string name="culinary_info">Info Kuliner</string>
+    <string name="shop_info">Info Warung</string>
+    <string name="rental_info">Info Sewa</string>
+    <string name="service_info">Info Jasa</string>
+    <string name="citizen_info_rt01">Info Warga RT 01</string>
+    <string name="money_info_rt01">Info Kas Rt 01</string>
+    <string name="citizen_info_rt02">Info Warga RT 02</string>
+    <string name="money_info_rt02">Info Kas Rt 02</string>
+    <string name="citizen_info_rt03">Info Warga RT 03</string>
+    <string name="money_info_rt03">Info Kas Rt 03</string>
+    <string name="citizen_info_rt04">Info Warga RT 04</string>
+    <string name="money_info_rt04">Info Kas Rt 04</string>
+    <string name="charity_box">Kotak Amal</string>
+    <string name="donation">Infaq</string>
+    <string name="donation_masjid">Donasi Bangunan</string>
+    <string name="qurban">Qurban</string>
+    <string name="electricity_donation">Donasi Listrik</string>
+    <string name="info_rt01">Info RT 01</string>
+    <string name="info_rt02">Info RT 02</string>
+    <string name="info_rt03">Info RT 03</string>
+    <string name="info_rt04">Info RT 04</string>
+    <string name="info_dkm">Info DKM</string>
+    <string name="date">Date</string>
+    <string name="rp">Rp 125.000</string>
+    <string name="title_money">Title</string>
+    <string name="detail_uang_kas">Detail Uang Kas</string>
+    <string name="desc_money">Description</string>
+    <string name="login">Login</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="add_account_citizen">Tambah Akun Warga</string>
+    <string name="login_here">Login Disini</string>
+    <string name="welcome_citizen_rt01">Selamat Datang Warga RT01</string>
+    <string name="welcome_admin_rt01">Selamat Datang Admin RT01</string>
+    <string name="welcome_citizen_rt02">Selamat Datang Warga RT02</string>
+    <string name="welcome_admin_rt02">Selamat Datang Admin RT02</string>
+    <string name="welcome_citizen_rt03">Selamat Datang Warga RT03</string>
+    <string name="welcome_admin_rt03">Selamat Datang Admin RT03</string>
+    <string name="welcome_citizen_rt04">Selamat Datang Warga RT04</string>
+    <string name="welcome_admin_rt04">Selamat Datang Admin RT04</string>
+    <string name="login_admin_rt03">Login Admin RT03</string>
+    <string name="not_have_account">Belum Punya Akun ? Daftarkan Lewat</string>
+    <string name="register">Register</string>
+    <string name="login_admin_dkm">Login Pengurus DKM</string>
+
+    <string-array name="total">
+        <item>Rp15.000</item>
+        <item>Rp5.000</item>
+        <item>Rp5.000</item>
+        <item>Rp15.000</item>
+        <item>Rp20.000</item>
+        <item>Rp10.000</item>
+        <item>Rp5.000</item>
+        <item>Rp10.000</item>
+        <item>Rp10.000</item>
+        <item>Rp5.000</item>
+        <item>Rp10.000</item>
+        <item>Rp16.000</item>
+        <item>Rp10.000</item>
+        <item>Rp5.000</item>
+        <item>Rp15.000</item>
+        <item>Rp10.000</item>
+        <item>Rp15.000</item>
+        <item>Rp25.000</item>
+    </string-array>
+
+    <string-array name="pengurus">
+        <item>Budi (RT04)</item>
+        <item>Lukman (RT01)</item>
+        <item>Zihan (RT01)</item>
+        <item>Api (RT02)</item>
+        <item>Edo RT02</item>
+        <item>Ilham RT03</item>
+        <item>Harun RT03</item>
+        <item>Jaya RT03</item>
+        <item>Tatang RT03</item>
+        <item>Farhan RT01</item>
+        <item>Galih RT01</item>
+        <item>Didin RT04</item>
+        <item>Teguh RT01</item>
+        <item>Manun RT04</item>
+        <item>Aziz RT02</item>
+        <item>Ridwan RT03</item>
+        <item>Renaldi RT01</item>
+        <item>Tian RT03</item>
+    </string-array>
+
+    <string-array name="desc">
+        <item>Uang khas minggu ini</item>
+        <item>Uang khas minggu ini</item>
+        <item>Uang khas minggu ini</item>
+        <item>Uang khas minggu ini</item>
+        <item>Uang khas minggu ini</item>
+        <item>Uang khas minggu ini</item>
+        <item>Uang khas minggu ini</item>
+        <item>Uang khas minggu ini</item>
+        <item>Uang khas minggu ini</item>
+        <item>Uang khas minggu ini</item>
+        <item>Uang khas minggu ini</item>
+        <item>Uang khas minggu ini</item>
+        <item>Uang khas minggu ini</item>
+        <item>Uang khas minggu ini</item>
+        <item>Uang khas minggu ini</item>
+        <item>Uang khas minggu ini</item>
+        <item>Uang khas minggu ini</item>
+        <item>Uang khas minggu ini</item>
+    </string-array>
+
+    <string-array name="date">
+        <item>01–01–2020</item>
+        <item>12–02–2020</item>
+        <item>23–02–2020</item>
+        <item>13–03–2020</item>
+        <item>15–44–2020</item>
+        <item>12–04–2020</item>
+        <item>06–05–2020</item>
+        <item>12–05–2020</item>
+        <item>07–05–2020</item>
+        <item>01–01–2020</item>
+        <item>12–02–2020</item>
+        <item>23–02–2020</item>
+        <item>13–03–2020</item>
+        <item>15–44–2020</item>
+        <item>12–04–2020</item>
+        <item>06–05–2020</item>
+        <item>12–05–2020</item>
+        <item>07–05–2020</item>
+    </string-array>
+
+    <string-array name="warga_tetap">
+        <item>Warga Tetap</item>
+        <item>Warga Tidak Tetap</item>
+    </string-array>
+
+    <string-array name="nama_warga">
+        <item>Ika</item>
+        <item>Wili</item>
+        <item>Rio Wili</item>
+        <item>Mba Zihan</item>
+        <item>Mas Izul</item>
+        <item>Mas Isal</item>
+        <item>Desi</item>
+        <item>Inung</item>
+        <item>Eca</item>
+        <item>Harun AR-Rashid Farid Gilang Handoko</item>
+        <item>Tatang</item>
+        <item>Novi</item>
+        <item>Aziz</item>
+        <item>Ridwan</item>
+        <item>Mba Ami</item>
+    </string-array>
+
+    <string-array name="gender">
+        <item>Perempuan</item>
+        <item>Laki - laki</item>
+        <item>Laki - laki</item>
+        <item>Perempuan</item>
+        <item>Laki - laki</item>
+        <item>Laki - laki</item>
+        <item>Perempuan</item>
+        <item>Laki - laki</item>
+        <item>Perempuan</item>
+        <item>Laki - laki</item>
+        <item>Laki - laki</item>
+        <item>Perempuan</item>
+        <item>Laki - laki</item>
+        <item>Laki - laki</item>
+        <item>Perempuan</item>
+    </string-array>
+
+    <string-array name="status">
+        <item>Warga Tetap</item>
+        <item>Warga Tetap</item>
+        <item>Warga Tidak Tetap</item>
+        <item>Warga Tetap</item>
+        <item>Warga Tetap</item>
+        <item>Warga Tetap</item>
+        <item>Warga Tidak Tetap</item>
+        <item>Warga Tetap</item>
+        <item>Warga Tidak Tetap</item>
+        <item>Warga Tetap</item>
+        <item>Warga Tidak Tetap</item>
+        <item>Warga Tetap</item>
+        <item>Warga Tetap</item>
+        <item>Warga Tidak Tetap</item>
+        <item>Warga Tetap</item>
+    </string-array>
+
+    <string-array name="address">
+        <item>Perum Pangulah Permai Blok B.1 RT03</item>
+        <item>Perum Pangulah Permai Blok B.13 RT03</item>
+        <item>Perum Pangulah Permai Blok B.4 RT03</item>
+        <item>Perum Pangulah Permai Blok B.7 RT03</item>
+        <item>Perum Pangulah Permai Blok B.9 RT03</item>
+        <item>Perum Pangulah Permai Blok B.18 RT03</item>
+        <item>Perum Pangulah Permai Blok B.2 RT03</item>
+        <item>Perum Pangulah Permai Blok B.8 RT03</item>
+        <item>Perum Pangulah Permai Blok B.11 RT03</item>
+        <item>Perum Pangulah Permai Blok B.6 RT03</item>
+        <item>Perum Pangulah Permai Blok B.12 RT03</item>
+        <item>Perum Pangulah Permai Blok B.17 RT03</item>
+        <item>Perum Pangulah Permai Blok B.20 RT03</item>
+        <item>Perum Pangulah Permai Blok B.23 RT03</item>
+        <item>Perum Pangulah Permai Blok B.5 RT03</item>
+    </string-array>
+
+    <string-array name="imageKotakAmal">
+        <item>@drawable/money</item>
+        <item>@drawable/money2</item>
+        <item>@drawable/money3</item>
+        <item>@drawable/money4</item>
+        <item>@drawable/money</item>
+        <item>@drawable/money3</item>
+        <item>@drawable/money2</item>
+        <item>@drawable/money</item>
+        <item>@drawable/money4</item>
+        <item>@drawable/money3</item>
+        <item>@drawable/money</item>
+        <item>@drawable/money2</item>
+        <item>@drawable/money</item>
+        <item>@drawable/money2</item>
+        <item>@drawable/money4</item>
+    </string-array>
+
+    <string-array name="nominalKotakAmal">
+        <item>Rp125.000</item>
+        <item>Rp160.000</item>
+        <item>Rp210.000</item>
+        <item>Rp175.000</item>
+        <item>Rp240.000</item>
+        <item>Rp180.000</item>
+        <item>Rp195.000</item>
+        <item>Rp200.000</item>
+        <item>Rp243.000</item>
+        <item>Rp230.000</item>
+        <item>Rp210.000</item>
+        <item>Rp230.000</item>
+        <item>Rp143.000</item>
+        <item>Rp73.000</item>
+        <item>Rp270.000</item>
+    </string-array>
+
+    <string-array name="dateKotakAmal">
+        <item>01–01–2021</item>
+        <item>08–01–2021</item>
+        <item>15–01–2021</item>
+        <item>22–01–2021</item>
+        <item>29–01–2021</item>
+        <item>01–02–2021</item>
+        <item>08–02–2021</item>
+        <item>15–02–2021</item>
+        <item>22–02–2021</item>
+        <item>29–02–2021</item>
+        <item>01–03–2021</item>
+        <item>08–03–2021</item>
+        <item>15–03–2021</item>
+        <item>22–03–2021</item>
+        <item>29–03–2021</item>
+    </string-array>
+
+    <string-array name="nameKotakAmal">
+        <item>Zihan (DKM)</item>
+        <item>Edo (DKM)</item>
+        <item>Api (DKM)</item>
+        <item>Lukman (DKM)</item>
+        <item>Farhan (DKM)</item>
+        <item>Ilham (DKM)</item>
+        <item>Oig (DKM)</item>
+        <item>Ilham (DKM)</item>
+        <item>Lukman (DKM)</item>
+        <item>Ardan (DKM)</item>
+        <item>Api (DKM)</item>
+        <item>Edo (DKM)</item>
+        <item>Ardan (DKM)</item>
+        <item>Lukman (DKM)</item>
+        <item>Zihan (DKM)</item>
+    </string-array>
+
+    <string-array name="namePengInfaq">
+        <item>Didin (RT01)</item>
+        <item>Teguh (RT02)</item>
+        <item>Fajar (RT04)</item>
+        <item>Rizal (RT03)</item>
+        <item>Farhan (RT02)</item>
+        <item>Nurhikmah (RT01)</item>
+        <item>Aida (RT03)</item>
+        <item>Aji (RT01)</item>
+        <item>Galih (RT02)</item>
+        <item>Tian (RT01)</item>
+        <item>Andre (RT02)</item>
+        <item>Seno (RT03)</item>
+        <item>Ahmad (RT04)</item>
+        <item>Alfi (RT03)</item>
+        <item>Jaelani (RT01)</item>
+    </string-array>
+
+    <string-array name="jenisQurban">
+        <item>Sapi</item>
+        <item>Kambing</item>
+        <item>Domba</item>
+        <item>Kambing</item>
+        <item>Sapi</item>
+        <item>Kambing</item>
+        <item>Domba</item>
+        <item>Sapi</item>
+        <item>Kambing</item>
+        <item>Domba</item>
+        <item>Sapi</item>
+        <item>Kambing</item>
+        <item>Domba</item>
+        <item>Sapi</item>
+        <item>Kambing</item>
+    </string-array>
+
+    <string-array name="statusBangunan">
+        <item>Pemasukan</item>
+        <item>Pengeluaran</item>
+        <item>Pemasukan</item>
+        <item>Pemasukan</item>
+        <item>Pemasukan</item>
+        <item>Pengeluaran</item>
+        <item>Pengeluaran</item>
+        <item>Pemasukan</item>
+        <item>Pengeluaran</item>
+        <item>Pengeluaran</item>
+        <item>Pemasukan</item>
+        <item>Pengeluaran</item>
+        <item>Pengeluaran</item>
+        <item>Pemasukan</item>
+        <item>Pengeluaran</item>
+    </string-array>
+
+    <string-array name="ketBangunan">
+        <item>Donasi hari ini</item>
+        <item>Beli Semen dan pasir</item>
+        <item>Donasi hari ini</item>
+        <item>Donasi hari ini</item>
+        <item>Donasi hari ini</item>
+        <item>Beli Batu Bata dan Batako</item>
+        <item>Bayar tukang</item>
+        <item>Donasi hari ini</item>
+        <item>Beli minuman dan makanan untuk tukang</item>
+        <item>Beli Semen 3 Karung</item>
+        <item>Donasi minggu ini</item>
+        <item>Beli Kaca</item>
+        <item>Beli Keramik</item>
+        <item>Donasi hari ini</item>
+        <item>Beli pintu</item>
+    </string-array>
+
+    <string-array name="ketListrik">
+        <item>Donasi hari ini</item>
+        <item>Bayar Listrik bulan Januari</item>
+        <item>Donasi hari ini</item>
+        <item>Donasi hari ini</item>
+        <item>Donasi hari ini</item>
+        <item>Bayar Listrik bulan Febuari</item>
+        <item>Bayar Listrik bulan Maret</item>
+        <item>Donasi hari ini</item>
+        <item>Bayar Listrik bulan April</item>
+        <item>Bayar Listrik bulan Mei</item>
+        <item>Donasi minggu ini</item>
+        <item>Bayar Listrik bulan Juni</item>
+        <item>Bayar Listrik bulan Juli</item>
+        <item>Donasi hari ini</item>
+        <item>Bayar Listrik bulan Agustus</item>
+    </string-array>
+
+    <string-array name="ketMoneyRt">
+        <item>Uang Kas Minggu ini</item>
+        <item>Bantuan untuk pa ini yg lagi sakit</item>
+        <item>Uang Kas Minggu ini</item>
+        <item>Uang Kas Minggu ini</item>
+        <item>Uang Kas Minggu ini</item>
+        <item>Jenguk ibu ini yg lagi sakit</item>
+        <item>Bantuan tunai untuk pasien covid</item>
+        <item>Uang Kas Minggu ini</item>
+        <item>Bantuan untuk bu ini yg lagi sakit</item>
+        <item>Jenguk pa ini di RS Iza</item>
+        <item>Uang Kas Minggu ini</item>
+        <item>Untuk beli makan minun buat yg kerja bakti</item>
+        <item>untuk penyemprotan Obat nyamuk bu Iin</item>
+        <item>Uang Kas Minggu ini</item>
+        <item>untuk penyemprotan Obat nyamuk bu Iin</item>
+        <item>Bantuan tunai untuk pasien covid</item>
+        <item>Uang Kas Minggu ini</item>
+        <item>Bantuan untuk bu ini yg lagi sakit</item>
+    </string-array>
+
+    <string-array name="statusMoneyRT">
+        <item>Pemasukan</item>
+        <item>Pengeluaran</item>
+        <item>Pemasukan</item>
+        <item>Pemasukan</item>
+        <item>Pemasukan</item>
+        <item>Pengeluaran</item>
+        <item>Pengeluaran</item>
+        <item>Pemasukan</item>
+        <item>Pengeluaran</item>
+        <item>Pengeluaran</item>
+        <item>Pemasukan</item>
+        <item>Pengeluaran</item>
+        <item>Pengeluaran</item>
+        <item>Pemasukan</item>
+        <item>Pengeluaran</item>
+        <item>Pengeluaran</item>
+        <item>Pemasukan</item>
+        <item>Pengeluaran</item>
+    </string-array>
+
+    <string-array name="imageRt">
+        <item>@drawable/money</item>
+        <item>@drawable/money2</item>
+        <item>@drawable/money3</item>
+        <item>@drawable/money4</item>
+        <item>@drawable/money</item>
+        <item>@drawable/money3</item>
+        <item>@drawable/money2</item>
+        <item>@drawable/money</item>
+        <item>@drawable/money4</item>
+        <item>@drawable/money3</item>
+        <item>@drawable/money</item>
+        <item>@drawable/money2</item>
+        <item>@drawable/money</item>
+        <item>@drawable/money2</item>
+        <item>@drawable/money4</item>
+        <item>@drawable/money</item>
+        <item>@drawable/money2</item>
+        <item>@drawable/money4</item>
+    </string-array>
+</resources>

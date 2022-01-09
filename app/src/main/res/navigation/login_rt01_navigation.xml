@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/login_rt01_navigation"
+    app:startDestination="@id/loginWargaRt01Fragment">
+
+    <fragment
+        android:id="@+id/loginWargaRt01Fragment"
+        android:name="com.pangper.infopangulahpermai.view.rt.rt01.login.LoginWargaRt01Fragment"
+        android:label="fragment_login_warga_rt01"
+        tools:layout="@layout/fragment_login_warga_rt01" >
+
+        <action
+            android:id="@+id/action_loginWargaRt01Fragment_to_loginAdminRt01Fragment"
+            app:destination="@id/loginAdminRt01Fragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim"/>
+
+        <action
+            android:id="@+id/action_loginWargaRt01Fragment_to_infoRt01Activity"
+            app:destination="@id/infoRt01Activity"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:launchSingleTop="true"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim"
+            app:popUpTo="@id/infoRt01Activity"
+            app:popUpToInclusive="true" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/loginAdminRt01Fragment"
+        android:name="com.pangper.infopangulahpermai.view.rt.rt01.login.LoginAdminRt01Fragment"
+        android:label="fragment_login_admin_rt01"
+        tools:layout="@layout/fragment_login_admin_rt01" >
+
+        <action
+            android:id="@+id/action_loginAdminRt01Fragment_to_infoRt01Activity"
+            app:destination="@id/infoRt01Activity"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:launchSingleTop="true"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim"
+            app:popUpTo="@id/infoRt01Activity"
+            app:popUpToInclusive="true" />
+    </fragment>
+
+    <activity
+        android:id="@+id/infoRt01Activity"
+        android:name="com.pangper.infopangulahpermai.view.rt.rt01.infort01.InfoRt01Activity"
+        android:label="activity_info_rt01"
+        tools:layout="@layout/activity_info_rt01" />
+
+</navigation>

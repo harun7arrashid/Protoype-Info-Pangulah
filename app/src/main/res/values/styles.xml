@@ -1,0 +1,578 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.MaterialComponents.DayNight.NoActionBar.Bridge">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="mButton">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_margin">20dp</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="CardViewMoney">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_marginStart">8dp</item>
+        <item name="android:layout_marginEnd">8dp</item>
+        <item name="android:layout_marginTop">4dp</item>
+        <item name="android:layout_marginBottom">4dp</item>
+    </style>
+
+    <style name="ConstraintMoney">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingStart">12dp</item>
+        <item name="android:paddingEnd">8dp</item>
+        <item name="android:paddingTop">12dp</item>
+        <item name="android:paddingBottom">12dp</item>
+    </style>
+
+    <style name="TvDateMoney">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="TvRpMoney">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:layout_marginTop">12dp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:text">Rp 125.000</item>
+        <item name="android:textColor">@android:color/black</item>
+    </style>
+
+    <style name="TvNameQurban">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:layout_marginTop">8dp</item>
+        <item name="android:layout_marginEnd">20dp</item>
+        <item name="android:text">Harun AR-Rashid Farid Gilang RT03</item>
+        <item name="android:textColor">@android:color/black</item>
+    </style>
+
+    <style name="TvTitleMoney">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">4dp</item>
+    </style>
+
+    <style name="EdtEmail">
+    <item name="android:layout_width">match_parent</item>
+    <item name="android:layout_height">wrap_content</item>
+    <item name="android:hint">@string/email</item>
+    <item name="android:textColor">#FFFF</item>
+    <item name="android:imeOptions">actionNext</item>
+    <item name="android:inputType">textEmailAddress</item>
+    <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="EdtPassword">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:hint">@string/password</item>
+        <item name="android:textColor">#FFFF</item>
+        <item name="android:inputType">textPassword</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="EdtFullName">
+    <item name="android:layout_width">match_parent</item>
+    <item name="android:layout_height">wrap_content</item>
+    <item name="android:hint">Nama Lengkap</item>
+    <item name="android:textColor">#FFFF</item>
+    <item name="android:imeOptions">actionNext</item>
+    <item name="android:inputType">textPersonName</item>
+    <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="EdtAddress">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">100dp</item>
+        <item name="android:hint">Alamat</item>
+        <item name="android:textColor">#FFFF</item>
+        <item name="android:imeOptions">actionDone</item>
+        <item name="android:inputType">textPersonName</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="BtnLoginRt">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">45dp</item>
+        <item name="android:layout_marginStart">40dp</item>
+        <item name="android:layout_marginEnd">40dp</item>
+        <item name="android:layout_marginBottom">26dp</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:background">@drawable/bg_btn</item>
+        <item name="android:text">@string/login</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="Widget.MaterialComponents.TextInputLayout.OutlinedBox.TextFieldLoginRt">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginStart">25dp</item>
+        <item name="android:layout_marginEnd">25dp</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textColorHint">@color/colorAccent</item>
+    </style>
+
+    <style name="Widget.MaterialComponents.TextInputLayout.OutlinedBox.TextFieldManageCitizen">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginStart">25dp</item>
+        <item name="android:layout_marginEnd">25dp</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textColorHint">@color/colorAccent</item>
+    </style>
+
+    <style name="TvLoginDisini">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginBottom">20dp</item>
+        <item name="android:text">@string/login_here</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="TvLoginWelcome">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginStart">42dp</item>
+        <item name="android:layout_marginEnd">42dp</item>
+        <item name="android:layout_marginBottom">15dp</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">30sp</item>
+        <item name="android:textStyle">bold|italic</item>
+    </style>
+
+    <style name="Widget.MaterialComponents.TextInputLayout.OutlinedBox.TextFieldManageAccount">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginStart">25dp</item>
+        <item name="android:layout_marginEnd">25dp</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textColorHint">@color/colorAccent</item>
+    </style>
+
+    <style name="EdtUsernameManageAccount">
+    <item name="android:layout_width">match_parent</item>
+    <item name="android:layout_height">wrap_content</item>
+    <item name="android:hint">Username</item>
+    <item name="android:textColor">#FFFF</item>
+    <item name="android:imeOptions">actionNext</item>
+    <item name="android:inputType">text</item>
+    <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="EdtPasswordManageAccount">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:hint">@string/password</item>
+        <item name="android:imeOptions">actionNext</item>
+        <item name="android:textColor">#FFFF</item>
+        <item name="android:inputType">textPassword</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="EdtPassConfManageAccount">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:hint">Konfirmasi Password</item>
+        <item name="android:textColor">#FFFF</item>
+        <item name="android:imeOptions">actionDone</item>
+        <item name="android:inputType">textPassword</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="BtnRegisterAccount">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">12dp</item>
+        <item name="android:layout_marginBottom">12dp</item>
+        <item name="android:layout_marginStart">50dp</item>
+        <item name="android:layout_marginEnd">50dp</item>
+        <item name="android:background">@drawable/bg_button_blue</item>
+        <item name="android:text">Register</item>
+        <item name="android:textSize">17sp</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="BtnCancelManageCitizen">
+        <item name="android:layout_width">110dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">12dp</item>
+        <item name="android:background">@drawable/bg_button_red</item>
+        <item name="android:text">Batal</item>
+        <item name="android:layout_marginBottom">40dp</item>
+        <item name="android:textSize">17sp</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="BtnSaveManageCitizen">
+        <item name="android:layout_width">110dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">12dp</item>
+        <item name="android:background">@drawable/bg_button_blue</item>
+        <item name="android:text">Simpan</item>
+        <item name="android:layout_marginBottom">40dp</item>
+        <item name="android:textSize">17sp</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+    
+    <style name="BtnSaveManageCitizen.Money">
+        <item name="android:layout_marginTop">40dp</item>
+        <item name="android:layout_marginBottom">40dp</item>
+    </style>
+
+    <style name="BtnCancelManageCitizen.Money">
+        <item name="android:layout_marginTop">40dp</item>
+        <item name="android:layout_marginBottom">40dp</item>
+    </style>
+
+    <style name="RadioGroup">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_marginStart">15dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:layout_marginTop">15dp</item>
+    </style>
+
+    <style name="RadioButton">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="ImgDetailCitizen">
+        <item name="android:layout_width">150dp</item>
+        <item name="android:layout_height">150dp</item>
+        <item name="android:src">@drawable/woman</item>
+    </style>
+
+    <style name="TvDetailNameCitizen">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">15dp</item>
+        <item name="android:layout_marginEnd">12dp</item>
+        <item name="android:layout_marginStart">12dp</item>
+        <item name="android:text">Harun Ar-Rashid</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="TvDetailAddress">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginStart">20dp</item>
+        <item name="android:layout_marginTop">20dp</item>
+        <item name="android:text">Alamat : </item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="TvDetailAddressCitizen">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginStart">6dp</item>
+        <item name="android:layout_marginTop">20dp</item>
+        <item name="android:layout_marginEnd">24dp</item>
+        <item name="android:lineSpacingExtra">4dp</item>
+        <item name="android:text">Perum Pangulah Permai Blok B No.16 RT03 RW09 Desa Pangulah Selatan</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="TvDetailStatus">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginStart">20dp</item>
+        <item name="android:layout_marginTop">12dp</item>
+        <item name="android:text">Status : </item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="TvDetailStatusCitizen">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginStart">6dp</item>
+        <item name="android:layout_marginTop">12dp</item>
+        <item name="android:layout_marginEnd">24dp</item>
+        <item name="android:lineSpacingExtra">4dp</item>
+        <item name="android:text">Warga Tidak Tetap</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="BtnDetailCitizen">
+        <item name="android:layout_width">180dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">50dp</item>
+        <item name="android:layout_marginBottom">30dp</item>
+        <item name="android:background">@drawable/bg_button_red</item>
+        <item name="android:drawableStart">@drawable/ic_back</item>
+        <item name="android:paddingStart">10dp</item>
+        <item name="android:paddingEnd">22dp</item>
+        <item name="android:text">Kembali</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="TvCitizenTetap">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginStart">18dp</item>
+        <item name="android:layout_marginTop">8dp</item>
+        <item name="android:text">Warga Tetap</item>
+        <item name="android:textColor">@android:color/black</item>
+    </style>
+
+    <style name="TvCitizenTidakTetap">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginEnd">18dp</item>
+        <item name="android:layout_marginTop">8dp</item>
+        <item name="android:text">Warga Tidak Tetap</item>
+        <item name="android:textColor">@android:color/black</item>
+    </style>
+
+    <style name="TvCitizenTotalTetap">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">8dp</item>
+        <item name="android:text">45</item>
+        <item name="android:textColor">@color/colorHijau</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    
+    <style name="TvCitizenTotalTetap.TidakTetap">
+        <item name="android:text">9</item>
+        <item name="android:textColor">@color/colorRed</item>
+    </style>
+    
+    <style name="RvCitizenInfo">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:layout_marginTop">8dp</item>
+    </style>
+
+    <style name="Widget.MaterialComponents.TextInputLayout.OutlinedBox.TextFieldManageMoney">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginStart">25dp</item>
+        <item name="android:layout_marginEnd">25dp</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textColorHint">@color/colorAccent</item>
+    </style>
+
+    <style name="EdtNominalMoney">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:hint">Rp.</item>
+        <item name="android:textColor">#FFFF</item>
+        <item name="android:imeOptions">actionNext</item>
+        <item name="android:inputType">number</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="EdtKetMoney">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:hint">Keterangan</item>
+        <item name="android:textColor">#FFFF</item>
+        <item name="android:imeOptions">actionDone</item>
+        <item name="android:inputType">text</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="EdtKetMoney.EdtNameQurban">
+        <item name="android:hint">Nama PengQurban</item>
+        <item name="android:imeOptions">actionNext</item>
+    </style>
+
+    <style name="FabMoney">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_margin">16dp</item>
+        <item name="android:src">@drawable/ic_fab_add</item>
+    </style>
+    
+    <style name="TvNotHaveAccount">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:text">@string/not_have_account</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:layout_marginBottom">10dp</item>
+    </style>
+
+    <style name="TvRegisterCitizen">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginStart">10dp</item>
+        <item name="android:layout_marginBottom">30dp</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="ImgWa">
+        <item name="android:layout_width">30dp</item>
+        <item name="android:layout_height">30dp</item>
+        <item name="android:src">@drawable/whatsapp</item>
+    </style>
+
+    <style name="ImgEditMoney">
+        <item name="android:layout_width">40dp</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:src">@drawable/edit_1</item>
+        <item name="android:layout_marginEnd">8dp</item>
+    </style>
+
+    <style name="ImgDetailMoney">
+        <item name="android:layout_width">200dp</item>
+        <item name="android:layout_height">200dp</item>
+        <item name="android:layout_marginTop">50dp</item>
+        <item name="android:src">@drawable/money</item>
+    </style>
+
+    <style name="TvDetailTotal">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">25dp</item>
+        <item name="android:text">Rp 230.000</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:textSize">26sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="TvDetailDate">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">20dp</item>
+        <item name="android:text">12-12-2020</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:textSize">22sp</item>
+    </style>
+
+    <style name="TvDetailDiInput">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">50dp</item>
+        <item name="android:layout_marginStart">8dp</item>
+        <item name="android:layout_marginBottom">20dp</item>
+        <item name="android:text">Data DiInput oleh : </item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="TvDetailNameMoney">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">50dp</item>
+        <item name="android:layout_marginStart">3dp</item>
+        <item name="android:layout_marginBottom">20dp</item>
+        <item name="android:text">Harun AR-Rashid (DKM) </item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="TvDetailNameMoney.Date">
+        <item name="android:text">12-12-2020 </item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_marginTop">8dp</item>
+        <item name="android:layout_marginStart">0dp</item>
+        <item name="android:layout_marginEnd">14dp</item>
+    </style>
+
+    <style name="TvTambahDataBaru">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">30dp</item>
+        <item name="android:layout_marginStart">14dp</item>
+        <item name="android:text">Tambah Data Baru</item>
+        <item name="android:textColor">@color/colorAccent</item>
+        <item name="android:textSize">28sp</item>
+    </style>
+
+    <style name="ImgAdd">
+        <item name="android:layout_width">130dp</item>
+        <item name="android:layout_height">130dp</item>
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:scaleType">centerCrop</item>
+        <item name="android:src">@drawable/img_add_image</item>
+    </style>
+
+    <style name="TvPemasukan">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:text">Pemasukan : </item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="TvPemasukan.Pengeluaran">
+        <item name="android:layout_marginTop">4dp</item>
+        <item name="android:text">Pengeluaran : </item>
+    </style>
+
+    <style name="TvPemasukan.Saldo">
+        <item name="android:layout_marginTop">4dp</item>
+        <item name="android:text">SALDO : </item>
+    </style>
+
+    <style name="View">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">2dp</item>
+        <item name="android:layout_marginTop">8dp</item>
+        <item name="android:background">@color/colorPrimary</item>
+    </style>
+
+    <style name="TvSaldo">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@android:color/black</item>
+    </style>
+
+    <style name="TvSaldo.Masuk">
+        <item name="android:text">Rp 530.000 </item>
+    </style>
+
+    <style name="TvSaldo.Keluar">
+        <item name="android:text">Rp 200.000 </item>
+        <item name="android:layout_marginTop">4dp</item>
+    </style>
+
+    <style name="TvSaldo.Saldo">
+        <item name="android:text">Rp 330.000 </item>
+        <item name="android:layout_marginTop">4dp</item>
+    </style>
+
+    <style name="RvMoney">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:layout_marginTop">8dp</item>
+        <item name="android:layout_marginBottom">12dp</item>
+    </style>
+</resources>

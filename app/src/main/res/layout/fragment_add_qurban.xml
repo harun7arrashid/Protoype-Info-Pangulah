@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_login"
+    tools:context=".view.dkm.qurban.AddQurbanFragment">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_qurban"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimary"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark"
+        app:layout_collapseMode="pin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:title="Qurban AL-Hikmah" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/toolbar_qurban">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_qurban_title"
+                style="@style/TvTambahDataBaru"
+                android:layout_marginTop="8dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textField_qurban_name"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.TextFieldManageMoney"
+                android:layout_marginTop="60dp"
+                app:boxBackgroundMode="outline"
+                app:errorEnabled="true"
+                app:errorTextColor="@color/colorRed"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_qurban_title">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edt_qurban_name"
+                    style="@style/EdtKetMoney.EdtNameQurban"
+                    android:importantForAutofill="no" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textField_qurban_nominal"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.TextFieldManageMoney"
+                app:boxBackgroundMode="outline"
+                app:errorEnabled="true"
+                app:errorTextColor="@color/colorRed"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/textField_qurban_name">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edt_qurban_nominal"
+                    style="@style/EdtNominalMoney"
+                    android:imeOptions="actionDone"
+                    android:importantForAutofill="no" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <ImageView
+                android:id="@+id/img_qurban_add"
+                style="@style/ImgAdd"
+                android:layout_marginTop="16dp"
+                app:layout_constraintStart_toStartOf="@id/textField_qurban_nominal"
+                app:layout_constraintTop_toBottomOf="@id/rg_qurban" />
+
+            <RadioGroup
+                android:id="@+id/rg_qurban"
+                style="@style/RadioGroup"
+                android:gravity="center"
+                android:layout_marginTop="8dp"
+                android:layout_marginStart="40dp"
+                android:layout_marginEnd="40dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/textField_qurban_nominal">
+
+                <RadioButton
+                    android:id="@+id/rb_qurban_sapi"
+                    style="@style/RadioButton"
+                    android:text="Sapi" />
+
+                <RadioButton
+                    android:id="@+id/rb_qurban_domba"
+                    style="@style/RadioButton"
+                    android:text="Domba" />
+
+                <RadioButton
+                    android:id="@+id/rb_qurban_kambing"
+                    style="@style/RadioButton"
+                    android:text="Kambing" />
+            </RadioGroup>
+
+            <Button
+                android:id="@+id/btn_qurban_save"
+                style="@style/BtnSaveManageCitizen"
+                android:layout_marginTop="25dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/btn_qurban_cancel"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/img_qurban_add" />
+
+            <Button
+                android:id="@+id/btn_qurban_cancel"
+                style="@style/BtnCancelManageCitizen"
+                android:layout_marginTop="25dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/btn_qurban_save"
+                app:layout_constraintTop_toBottomOf="@id/img_qurban_add" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

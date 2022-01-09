@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_login"
+    tools:context=".view.rt.rt04.admin.ManageMoneyRt04Activity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_manage_money_title_rt04"
+            style="@style/TvTambahDataBaru"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textField_money_nominal_rt04"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.TextFieldManageMoney"
+            android:layout_marginTop="100dp"
+            app:boxBackgroundMode="outline"
+            app:errorEnabled="true"
+            app:errorTextColor="@color/colorRed"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_manage_money_title_rt04">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edt_manage_money_nominal_rt04"
+                style="@style/EdtNominalMoney"
+                android:importantForAutofill="no" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textField_money_desc_rt04"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.TextFieldManageMoney"
+            app:boxBackgroundMode="outline"
+            app:errorEnabled="true"
+            app:errorTextColor="@color/colorRed"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textField_money_nominal_rt04">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edt_manage_money_ket_rt04"
+                style="@style/EdtKetMoney"
+                android:importantForAutofill="no" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <RadioGroup
+            android:id="@+id/rg_money_rt04"
+            style="@style/RadioGroup"
+            android:layout_marginTop="4dp"
+            app:layout_constraintEnd_toEndOf="@id/textField_money_desc_rt04"
+            app:layout_constraintStart_toStartOf="@id/textField_money_desc_rt04"
+            app:layout_constraintTop_toBottomOf="@id/textField_money_desc_rt04">
+
+            <RadioButton
+                android:id="@+id/rb_money_masuk_rt04"
+                style="@style/RadioButton"
+                android:textSize="14sp"
+                android:text="Pemasukan" />
+
+            <RadioButton
+                android:id="@+id/rb_money_keluar_rt04"
+                style="@style/RadioButton"
+                android:textSize="14sp"
+                android:text="Pengeluaran"/>
+        </RadioGroup>
+
+        <ImageView
+            android:id="@+id/img_manage_money_rt04"
+            android:layout_width="130dp"
+            android:layout_marginTop="15dp"
+            android:layout_height="130dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/img_add_image"
+            app:layout_constraintStart_toStartOf="@id/textField_money_desc_rt04"
+            app:layout_constraintTop_toBottomOf="@id/rg_money_rt04" />
+
+        <Button
+            android:id="@+id/btn_manage_money_save_rt04"
+            style="@style/BtnSaveManageCitizen.Money"
+            app:layout_constraintEnd_toStartOf="@+id/btn_manage_money_cancel_rt04"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/img_manage_money_rt04" />
+
+        <Button
+            android:id="@+id/btn_manage_money_cancel_rt04"
+            style="@style/BtnCancelManageCitizen.Money"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/btn_manage_money_save_rt04"
+            app:layout_constraintTop_toBottomOf="@id/img_manage_money_rt04"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/gradient_login"
+    tools:context=".view.rt.rt04.admin.ManageAccountRt04Fragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar_manage_account_rt04"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/colorPrimary"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark"
+            app:layout_collapseMode="pin"
+            app:title="Tambah Akun Warga"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textField_username_rt04"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.TextFieldManageAccount"
+            app:boxBackgroundMode="outline"
+            app:errorEnabled="true"
+            android:layout_marginTop="170dp"
+            app:errorTextColor="@color/colorRed"
+            app:layout_constraintTop_toBottomOf="@id/toolbar_manage_account_rt04"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/textField_password_rt04"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edt_manageAccount_username_rt04"
+                style="@style/EdtUsernameManageAccount"
+                android:importantForAutofill="no" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textField_password_rt04"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.TextFieldLoginRt"
+            app:boxBackgroundMode="outline"
+            app:counterEnabled="true"
+            app:counterTextColor="@android:color/white"
+            app:errorEnabled="true"
+            app:errorTextColor="@color/colorRed"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textField_username_rt04"
+            app:layout_constraintBottom_toTopOf="@id/textField_passconf_rt04"
+            app:layout_constraintStart_toStartOf="parent"
+            app:passwordToggleEnabled="true"
+            app:passwordToggleTint="@android:color/darker_gray">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edt_manageAccount_password_rt04"
+                style="@style/EdtPasswordManageAccount"
+                android:importantForAutofill="no" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textField_passconf_rt04"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.TextFieldLoginRt"
+            app:boxBackgroundMode="outline"
+            app:counterEnabled="true"
+            app:counterTextColor="@android:color/white"
+            app:errorEnabled="true"
+            app:errorTextColor="@color/colorRed"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textField_password_rt04"
+            app:layout_constraintStart_toStartOf="parent"
+            app:passwordToggleEnabled="true"
+            android:layout_marginBottom="40dp"
+            app:layout_constraintBottom_toTopOf="@id/btn_manageAccount_register_rt04"
+            app:passwordToggleTint="@android:color/darker_gray">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edt_manageAccount_passconf_rt04"
+                style="@style/EdtPassConfManageAccount"
+                android:importantForAutofill="no" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/btn_manageAccount_register_rt04"
+            style="@style/BtnSaveManageCitizen"
+            android:text="@string/register"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/btn_manageAccount_cancel_rt04"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintVertical_bias="1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textField_passconf_rt04" />
+
+        <Button
+            android:id="@+id/btn_manageAccount_cancel_rt04"
+            style="@style/BtnCancelManageCitizen"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintVertical_bias="1"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/btn_manageAccount_register_rt04"
+            app:layout_constraintTop_toBottomOf="@id/textField_passconf_rt04" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

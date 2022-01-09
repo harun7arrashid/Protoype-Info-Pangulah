@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.rt.rt03.infort03.InfoRt03Fragment">
+
+    <Button
+        android:id="@+id/btn_infoWarga_rt03"
+        style="@style/mButton"
+        android:background="@drawable/bg_btn3"
+        android:text="@string/citizen_info_rt03"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.3" />
+
+    <Button
+        android:id="@+id/btn_infoKas_rt03"
+        style="@style/mButton"
+        android:background="@drawable/bg_btn3"
+        android:text="@string/money_info_rt03"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btn_infoWarga_rt03" />
+
+    <Button
+        android:id="@+id/btn_kelolaData_rt03"
+        style="@style/mButton"
+        android:background="@drawable/bg_btn"
+        android:text="Kelola Data RT03"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btn_infoKas_rt03" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/btn_kelolaData_rt03"
+        android:layout_marginTop="8dp"
+        android:text="^ Nanti kalo yg login itu Warga, tombol Kelola Data RTnya gk bkl ada/ke hidden"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

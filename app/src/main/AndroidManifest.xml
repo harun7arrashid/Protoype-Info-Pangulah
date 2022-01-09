@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.pangper.infopangulahpermai">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".view.dkm.electricityDonation.ElectricActivity"></activity>
+        <activity android:name=".view.dkm.qurban.QurbanActivity" />
+        <activity android:name=".view.dkm.donationBuilding.BuildingActivity" />
+        <activity android:name=".view.dkm.infaq.InfaqActivity" />
+        <activity android:name=".view.rt.rt04.admin.ManageMoneyRt04Activity" />
+        <activity android:name=".view.rt.rt03.admin.ManageMoneyRt03Activity" />
+        <activity android:name=".view.rt.rt02.admin.ManageMoneyRt02Activity" />
+        <activity android:name=".view.rt.rt01.admin.ManageMoneyRt01Activity" />
+        <activity android:name=".view.dkm.charityBox.CharityBoxActivity" />
+        <activity android:name=".view.rt.rt04.infort04.InfoRt04Activity" />
+        <activity android:name=".view.rt.rt04.login.LoginRt04Activity" />
+        <activity android:name=".view.rt.rt02.login.LoginRt02Activity" />
+        <activity android:name=".view.rt.rt02.infort02.InfoRt02Activity" />
+        <activity android:name=".view.rt.rt01.infort01.InfoRt01Activity" />
+        <activity android:name=".view.rt.rt01.login.LoginRt01Activity" />
+        <activity android:name=".view.rt.rt03.login.LoginRt03Activity" />
+        <activity android:name=".view.rt.rt03.infort03.InfoRt03Activity" />
+        <activity android:name=".view.shop.ShopActivity" />
+        <activity android:name=".view.rental.RentalActivity" />
+        <activity android:name=".view.service.ServiceActivity" />
+        <activity android:name=".view.culinary.CulinaryActivity" />
+        <activity android:name=".view.mainMenu.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

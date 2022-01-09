@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_login"
+    tools:context=".view.rt.rt03.admin.ManageCitizenRt03Fragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_manage_citizen"
+            style="@style/TvLoginWelcome"
+            android:layout_marginTop="60dp"
+            android:text="Tambah Data Penduduk RT03"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.5" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textField_citizen_fullname_rt03"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.TextFieldManageAccount"
+            android:layout_marginTop="70dp"
+            app:boxBackgroundMode="outline"
+            app:errorEnabled="true"
+            app:errorTextColor="@color/colorRed"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_manage_citizen">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edt_citizen_fullname_rt03"
+                style="@style/EdtFullName"
+                android:importantForAutofill="no" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textField_citizen_address_rt03"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.TextFieldManageAccount"
+            android:layout_marginTop="8dp"
+            app:boxBackgroundMode="outline"
+            app:errorEnabled="true"
+            app:errorTextColor="@color/colorRed"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textField_citizen_fullname_rt03">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edt_citizen_address_rt03"
+                style="@style/EdtAddress"
+                android:importantForAutofill="no" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Spinner
+            android:id="@+id/spinner_citizen_rt03"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:outlineAmbientShadowColor="@color/colorAccent"
+            app:layout_constraintEnd_toEndOf="@id/textField_citizen_address_rt03"
+            app:layout_constraintStart_toStartOf="@id/textField_citizen_address_rt03"
+            app:layout_constraintTop_toBottomOf="@id/textField_citizen_address_rt03" />
+
+        <RadioGroup
+            android:id="@+id/rg_citizen_rt03"
+            style="@style/RadioGroup"
+            app:layout_constraintEnd_toEndOf="@id/textField_citizen_address_rt03"
+            app:layout_constraintStart_toStartOf="@id/textField_citizen_address_rt03"
+            app:layout_constraintTop_toBottomOf="@id/spinner_citizen_rt03">
+
+            <RadioButton
+                android:id="@+id/rb_citizen_male_rt03"
+                style="@style/RadioButton"
+                android:text="Laki - laki" />
+
+            <RadioButton
+                android:id="@+id/rb_citizen_female_rt03"
+                style="@style/RadioButton"
+                android:text="Perempuan" />
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/btn_citizen_save_rt03"
+            style="@style/BtnSaveManageCitizen"
+            app:layout_constraintVertical_bias="1"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/btn_citizen_cancel_rt03"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/rg_citizen_rt03" />
+
+        <Button
+            android:id="@+id/btn_citizen_cancel_rt03"
+            style="@style/BtnCancelManageCitizen"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintVertical_bias="1"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/btn_citizen_save_rt03"
+            app:layout_constraintTop_toBottomOf="@id/rg_citizen_rt03" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

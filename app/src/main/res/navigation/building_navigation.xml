@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/building_navigation"
+    app:startDestination="@id/listBuildingFragment">
+
+    <fragment
+        android:id="@+id/listBuildingFragment"
+        android:name="com.pangper.infopangulahpermai.view.dkm.donationBuilding.ListBuildingFragment"
+        android:label="fragment_list_building"
+        tools:layout="@layout/fragment_list_building" >
+
+        <action
+            android:id="@+id/action_listBuildingFragment_to_detailBuildingFragment"
+            app:destination="@id/detailBuildingFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim"/>
+
+        <action
+            android:id="@+id/action_listBuildingFragment_to_addBuildingFragment"
+            app:destination="@id/addBuildingFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/detailBuildingFragment"
+        android:name="com.pangper.infopangulahpermai.view.dkm.donationBuilding.DetailBuildingFragment"
+        android:label="fragment_detail_building"
+        tools:layout="@layout/fragment_detail_building" >
+
+        <argument
+            android:name="detail_build"
+            app:argType="com.pangper.infopangulahpermai.model.dkm.BuildingModel"
+            app:nullable="true"
+            android:defaultValue="@null" />
+
+        <action
+            android:id="@+id/action_detailBuildingFragment_to_listBuildingFragment"
+            app:destination="@id/listBuildingFragment"
+            app:launchSingleTop="true"
+            app:popUpTo="@id/listBuildingFragment"
+            app:popUpToInclusive="true"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/addBuildingFragment"
+        android:name="com.pangper.infopangulahpermai.view.dkm.donationBuilding.AddBuildingFragment"
+        android:label="fragment_add_building"
+        tools:layout="@layout/fragment_add_building" >
+
+        <argument
+            android:name="edit_build"
+            app:argType="com.pangper.infopangulahpermai.model.dkm.BuildingModel"
+            app:nullable="true"
+            android:defaultValue="@null" />
+
+        <action
+            android:id="@+id/action_addBuildingFragment_to_listBuildingFragment"
+            app:destination="@id/listBuildingFragment"
+            app:launchSingleTop="true"
+            app:popUpTo="@id/listBuildingFragment"
+            app:popUpToInclusive="true"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim"/>
+    </fragment>
+</navigation>

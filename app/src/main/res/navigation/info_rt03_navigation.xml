@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/dashboard_rt03_navigation"
+    app:startDestination="@id/infoRt03Fragment">
+
+    <fragment
+        android:id="@+id/infoRt03Fragment"
+        android:name="com.pangper.infopangulahpermai.view.rt.rt03.infort03.InfoRt03Fragment"
+        android:label="fragment_info_rt03"
+        tools:layout="@layout/fragment_info_rt03" >
+
+        <action
+            android:id="@+id/action_infoRt03Fragment_to_manageDataRt03Fragment"
+            app:destination="@id/manageDataRt03Fragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim"/>
+
+        <action
+            android:id="@+id/action_infoRt03Fragment_to_citizenInfoRt03Fragment"
+            app:destination="@id/citizenInfoRt03Fragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim"/>
+
+        <action
+            android:id="@+id/action_infoRt03Fragment_to_moneyInfoRt03Fragment"
+            app:destination="@id/moneyInfoRt03Fragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim"/>
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/manageDataRt03Fragment"
+        android:name="com.pangper.infopangulahpermai.view.rt.rt03.admin.ManageDataRt03Fragment"
+        android:label="fragment_manage_data_rt03"
+        tools:layout="@layout/fragment_manage_data_rt03" >
+
+        <action
+            android:id="@+id/action_manageDataRt03Fragment_to_manageAccountRt03Fragment"
+            app:destination="@id/manageAccountRt03Fragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim"/>
+
+        <action
+            android:id="@+id/action_manageDataRt03Fragment_to_manageCitizenRt03Fragment"
+            app:destination="@id/manageCitizenRt03Fragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim"/>
+
+        <action
+            android:id="@+id/action_manageDataRt03Fragment_to_manageMoneyRt03Activity"
+            app:destination="@id/manageMoneyRt03Activity"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/citizenInfoRt03Fragment"
+        android:name="com.pangper.infopangulahpermai.view.rt.rt03.citizen.CitizenInfoRt03Fragment"
+        android:label="fragment_citizen_info_rt03"
+        tools:layout="@layout/fragment_citizen_info_rt03" >
+
+        <action
+            android:id="@+id/action_citizenInfoRt03Fragment_to_detailCitizenRt03Fragment"
+            app:destination="@id/detailCitizenRt03Fragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim"/>
+
+        <action
+            android:id="@+id/action_citizenInfoRt03Fragment_to_manageCitizenRt03Fragment"
+            app:destination="@id/manageCitizenRt03Fragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/manageAccountRt03Fragment"
+        android:name="com.pangper.infopangulahpermai.view.rt.rt03.admin.ManageAccountRt03Fragment"
+        android:label="fragment_manage_account_rt03"
+        tools:layout="@layout/fragment_manage_account_rt03" >
+
+        <action
+            android:id="@+id/action_manageAccountRt03Fragment_to_manageDataRt03Fragment"
+            app:destination="@id/manageDataRt03Fragment"
+            app:launchSingleTop="true"
+            app:popUpTo="@id/manageDataRt03Fragment"
+            app:popUpToInclusive="true"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/manageCitizenRt03Fragment"
+        android:name="com.pangper.infopangulahpermai.view.rt.rt03.admin.ManageCitizenRt03Fragment"
+        android:label="fragment_manage_citizen_rt03"
+        tools:layout="@layout/fragment_manage_citizen_rt03" >
+
+        <action
+            android:id="@+id/action_manageCitizenRt03Fragment_to_manageDataRt03Fragment"
+            app:destination="@id/manageDataRt03Fragment"
+            app:launchSingleTop="true"
+            app:popUpTo="@id/manageDataRt03Fragment"
+            app:popUpToInclusive="true"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim"/>
+
+        <argument
+            android:name="edit_warga_rt03"
+            app:argType="com.pangper.infopangulahpermai.model.CitizenDataRT03"
+            app:nullable="true"
+            android:defaultValue="@null" />
+
+        <action
+            android:id="@+id/action_manageCitizenRt03Fragment_to_citizenInfoRt03Fragment"
+            app:destination="@id/citizenInfoRt03Fragment"
+            app:launchSingleTop="true"
+            app:popUpTo="@id/citizenInfoRt03Fragment"
+            app:popUpToInclusive="true"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim"/>
+    </fragment>
+    <fragment
+        android:id="@+id/detailCitizenRt03Fragment"
+        android:name="com.pangper.infopangulahpermai.view.rt.rt03.citizen.DetailCitizenRt03Fragment"
+        android:label="fragment_detail_citizen_rt03"
+        tools:layout="@layout/fragment_detail_citizen_rt03" >
+
+        <action
+            android:id="@+id/action_detailCitizenRt03Fragment_to_citizenInfoRt03Fragment"
+            app:destination="@id/citizenInfoRt03Fragment"
+            app:launchSingleTop="true"
+            app:popUpTo="@id/citizenInfoRt03Fragment"
+            app:popUpToInclusive="true"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim"/>
+
+        <argument
+            android:name="warga_rt03"
+            app:argType="com.pangper.infopangulahpermai.model.CitizenDataRT03"
+            app:nullable="true"
+            android:defaultValue="@null" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/detailMoneyRt03Fragment"
+        android:name="com.pangper.infopangulahpermai.view.rt.rt03.money.DetailMoneyRt03Fragment"
+        android:label="fragment_detail_money_rt03"
+        tools:layout="@layout/fragment_detail_money_rt03" >
+
+        <action
+            android:id="@+id/action_detailMoneyRt03Fragment_to_moneyInfoRt03Fragment"
+            app:destination="@id/moneyInfoRt03Fragment"
+            app:launchSingleTop="true"
+            app:popUpTo="@id/moneyInfoRt03Fragment"
+            app:popUpToInclusive="true"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim"/>
+
+        <argument
+            android:name="money_rt03"
+            app:argType="com.pangper.infopangulahpermai.model.MoneyRt03"
+            app:nullable="true"
+            android:defaultValue="@null" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/moneyInfoRt03Fragment"
+        android:name="com.pangper.infopangulahpermai.view.rt.rt03.money.MoneyInfoRt03Fragment"
+        android:label="fragment_money_info_rt03"
+        tools:layout="@layout/fragment_money_info_rt03" >
+
+        <action
+            android:id="@+id/action_moneyInfoRt03Fragment_to_detailMoneyRt03Fragment"
+            app:destination="@id/detailMoneyRt03Fragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim"/>
+
+        <action
+            android:id="@+id/action_moneyInfoRt03Fragment_to_manageMoneyRt03Activity"
+            app:destination="@id/manageMoneyRt03Activity"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim"/>
+    </fragment>
+
+    <activity
+        android:id="@+id/manageMoneyRt03Activity"
+        android:name="com.pangper.infopangulahpermai.view.rt.rt03.admin.ManageMoneyRt03Activity"
+        android:label="activity_manage_money_rt03"
+        tools:layout="@layout/activity_manage_money_rt03" />
+</navigation>

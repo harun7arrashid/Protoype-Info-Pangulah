@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".view.rt.rt01.money.DetailMoneyRt01Fragment">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_detail_money_rt01"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimary"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark"
+        app:layout_collapseMode="pin"
+        app:title="@string/detail_uang_kas"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/toolbar_detail_money_rt01">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/img_detail_money_rt01"
+                style="@style/ImgDetailMoney"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+            <TextView
+                android:id="@+id/tv_detail_total_rt01"
+                style="@style/TvDetailTotal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/img_detail_money_rt01" />
+
+            <TextView
+                android:id="@+id/tv_detail_ket_rt01"
+                style="@style/TvDetailNameMoney.Date"
+                android:layout_marginTop="40dp"
+                android:text="Beli Semen Pasir"
+                android:layout_marginStart="8dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0"
+                app:layout_constraintStart_toEndOf="@id/tv_detail_diInput1"
+                app:layout_constraintTop_toBottomOf="@id/tv_detail_total_rt01" />
+
+            <TextView
+                android:id="@+id/tv_detail_diInput1"
+                style="@style/TvDetailDiInput"
+                android:text="Keterangan : "
+                android:layout_marginTop="40dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_detail_total_rt01"/>
+
+            <TextView
+                android:id="@+id/tv_detail_status_rt01"
+                style="@style/TvDetailNameMoney.Date"
+                android:layout_marginTop="8dp"
+                android:text="Pengeluaran"
+                android:layout_marginStart="8dp"
+                app:layout_constraintStart_toEndOf="@id/tv_detail_diInput2"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0"
+                app:layout_constraintTop_toBottomOf="@id/tv_detail_ket_rt01" />
+
+            <TextView
+                android:id="@+id/tv_detail_diInput2"
+                style="@style/TvDetailDiInput"
+                android:text="Status : "
+                android:layout_marginTop="8dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_detail_diInput1" />
+
+            <TextView
+                android:id="@+id/tv_detail_diInput3"
+                style="@style/TvDetailDiInput"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0"
+                android:layout_marginTop="8dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_detail_status_rt01" />
+
+            <TextView
+                android:id="@+id/tv_detail_pengurus_rt01"
+                style="@style/TvDetailNameMoney"
+                android:layout_marginTop="8dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0"
+                app:layout_constraintStart_toEndOf="@id/tv_detail_diInput3"
+                app:layout_constraintTop_toBottomOf="@id/tv_detail_status_rt01" />
+
+            <TextView
+                android:id="@+id/tv_detail_diInput4"
+                style="@style/TvDetailDiInput"
+                android:text="Pada Tanggal : "
+                android:layout_marginTop="8dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_detail_pengurus_rt01" />
+
+            <TextView
+                android:id="@+id/tv_detail_date_rt01"
+                style="@style/TvDetailNameMoney.Date"
+                android:layout_marginTop="8dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0"
+                app:layout_constraintStart_toStartOf="@id/tv_detail_pengurus_rt01"
+                app:layout_constraintTop_toBottomOf="@id/tv_detail_pengurus_rt01" />
+
+            <Button
+                android:id="@+id/btn_detail_back_rt01"
+                style="@style/BtnDetailCitizen"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_detail_date_rt01" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

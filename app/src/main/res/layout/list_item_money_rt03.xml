@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="6dp"
+    app:cardElevation="8dp"
+    style="@style/CardViewMoney">
+    
+    <androidx.constraintlayout.widget.ConstraintLayout
+        style="@style/ConstraintMoney">
+
+        <TextView
+            android:id="@+id/tv_list_date_rt03"
+            style="@style/TvDateMoney"
+            android:text="@string/date"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+        <TextView
+            android:id="@+id/tv_list_rp_rt03"
+            style="@style/TvRpMoney"
+            android:text="@string/rp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@id/tv_list_date_rt03"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <TextView
+            android:id="@+id/tv_list_status_rt03"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pemasukan"
+            android:layout_marginTop="4dp"
+            android:textColor="@color/colorHijau"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_list_rp_rt03"/>
+
+        <ImageView
+            android:id="@+id/img_list_edit_rt03"
+            style="@style/ImgEditMoney"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

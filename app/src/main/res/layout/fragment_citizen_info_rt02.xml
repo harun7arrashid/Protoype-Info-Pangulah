@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".view.rt.rt02.citizen.CitizenInfoRt02Fragment">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_citizen_rt02"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimary"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark"
+        app:layout_collapseMode="pin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:title="List Penduduk RT02" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv_citizen_rt02"
+        style="@style/CardViewMoney"
+        app:cardCornerRadius="6dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/toolbar_citizen_rt02">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_citizen_tetap"
+                style="@style/TvCitizenTetap"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tv_citizen_tidakTetap"
+                style="@style/TvCitizenTidakTetap"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tv_citizenrt02_totalTetap"
+                style="@style/TvCitizenTotalTetap"
+                app:layout_constraintEnd_toEndOf="@id/tv_citizen_tetap"
+                app:layout_constraintStart_toStartOf="@id/tv_citizen_tetap"
+                app:layout_constraintTop_toBottomOf="@id/tv_citizen_tetap" />
+
+            <TextView
+                android:id="@+id/tv_citizenrt02_totalTidak"
+                style="@style/TvCitizenTotalTetap.TidakTetap"
+                app:layout_constraintEnd_toEndOf="@id/tv_citizen_tidakTetap"
+                app:layout_constraintStart_toStartOf="@id/tv_citizen_tidakTetap"
+                app:layout_constraintTop_toBottomOf="@id/tv_citizen_tidakTetap" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_citizen_rt02"
+        style="@style/RvCitizenInfo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/cv_citizen_rt02"
+        tools:listitem="@layout/list_item_citizen_admin" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab_citizen_rt02"
+        style="@style/FabMoney"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

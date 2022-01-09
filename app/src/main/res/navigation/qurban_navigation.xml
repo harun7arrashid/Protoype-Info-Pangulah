@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/qurban_navigation"
+    app:startDestination="@id/listQurbanFragment">
+
+    <fragment
+        android:id="@+id/listQurbanFragment"
+        android:name="com.pangper.infopangulahpermai.view.dkm.qurban.ListQurbanFragment"
+        android:label="fragment_list_qurban"
+        tools:layout="@layout/fragment_list_qurban" >
+
+        <action
+            android:id="@+id/action_listQurbanFragment_to_detailQurbanFragment"
+            app:destination="@id/detailQurbanFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim"/>
+
+        <action
+            android:id="@+id/action_listQurbanFragment_to_addQurbanFragment"
+            app:destination="@id/addQurbanFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim"/>
+
+    </fragment>
+    <fragment
+        android:id="@+id/detailQurbanFragment"
+        android:name="com.pangper.infopangulahpermai.view.dkm.qurban.DetailQurbanFragment"
+        android:label="fragment_detail_qurban"
+        tools:layout="@layout/fragment_detail_qurban" >
+
+        <argument
+            android:name="detail_qurban"
+            app:argType="com.pangper.infopangulahpermai.model.dkm.QurbanModel"
+            app:nullable="true"
+            android:defaultValue="@null" />
+
+        <action
+            android:id="@+id/action_detailQurbanFragment_to_listQurbanFragment"
+            app:destination="@id/listQurbanFragment"
+            app:launchSingleTop="true"
+            app:popUpTo="@id/listQurbanFragment"
+            app:popUpToInclusive="true"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/addQurbanFragment"
+        android:name="com.pangper.infopangulahpermai.view.dkm.qurban.AddQurbanFragment"
+        android:label="fragment_add_qurban"
+        tools:layout="@layout/fragment_add_qurban" >
+
+        <argument
+            android:name="edit_qurban"
+            app:argType="com.pangper.infopangulahpermai.model.dkm.QurbanModel"
+            app:nullable="true"
+            android:defaultValue="@null" />
+
+        <action
+            android:id="@+id/action_addQurbanFragment_to_listQurbanFragment"
+            app:destination="@id/listQurbanFragment"
+            app:launchSingleTop="true"
+            app:popUpTo="@id/listQurbanFragment"
+            app:popUpToInclusive="true"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim"/>
+    </fragment>
+</navigation>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/CardViewMoney"
+    app:cardCornerRadius="6dp"
+    app:cardElevation="8dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        style="@style/ConstraintMoney"
+        tools:ignore="RtlSymmetry">
+
+        <TextView
+            android:id="@+id/tv_list_date_qurban_admin"
+            style="@style/TvDateMoney"
+            android:text="Date"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_list_name_qurban_admin"
+            style="@style/TvNameQurban"
+            app:layout_constraintEnd_toStartOf="@id/img_list_qurban_edit_admin"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_list_date_qurban_admin" />
+
+        <TextView
+            android:id="@+id/tv_list_jenisQurban_qurban_admin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Jenis Qurban : "
+            android:textColor="@android:color/black"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="4dp"
+            app:layout_constraintTop_toBottomOf="@id/tv_list_name_qurban_admin"/>
+
+        <TextView
+            android:id="@+id/tv_list_jenis_qurban_admin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kambing/Domba "
+            android:textColor="@android:color/black"
+            app:layout_constraintStart_toEndOf="@id/tv_list_jenisQurban_qurban_admin"
+            android:layout_marginTop="4dp"
+            app:layout_constraintTop_toBottomOf="@id/tv_list_name_qurban_admin"/>
+
+        <TextView
+            android:id="@+id/tv_list_nominal_qurban_admin"
+            style="@style/TvRpMoney"
+            android:textSize="16sp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_list_jenisQurban_qurban_admin" />
+
+        <ImageView
+            android:id="@+id/img_list_qurban_edit_admin"
+            style="@style/ImgEditMoney"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

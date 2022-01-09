@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".view.mainMenu.ListRtFragment">
+
+    <Button
+        android:id="@+id/btn_info_rt01"
+        style="@style/mButton"
+        android:text="@string/info_rt01"
+        android:background="@drawable/bg_btn2"
+        app:layout_constraintVertical_bias="0.2"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <Button
+        android:id="@+id/btn_info_rt02"
+        style="@style/mButton"
+        android:text="@string/info_rt02"
+        android:background="@drawable/bg_btn2"
+        app:layout_constraintTop_toBottomOf="@id/btn_info_rt01"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <Button
+        android:id="@+id/btn_info_rt03"
+        style="@style/mButton"
+        android:text="@string/info_rt03"
+        android:background="@drawable/bg_btn2"
+        app:layout_constraintTop_toBottomOf="@id/btn_info_rt02"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <Button
+        android:id="@+id/btn_info_rt04"
+        style="@style/mButton"
+        android:text="@string/info_rt04"
+        android:background="@drawable/bg_btn2"
+        app:layout_constraintTop_toBottomOf="@id/btn_info_rt03"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <Button
+        android:id="@+id/btn_info_dkm"
+        style="@style/mButton"
+        android:text="@string/info_dkm"
+        android:background="@drawable/bg_btn2"
+        app:layout_constraintTop_toBottomOf="@id/btn_info_rt04"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
